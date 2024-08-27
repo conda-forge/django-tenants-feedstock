@@ -1,5 +1,5 @@
 {% set name = "django-tenants" %}
-{% set version = "3.6.1" %}
+{% set version = "3.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-tenants-{{ version }}.tar.gz
-  sha256: 36052d5bfce8240afab062e2d33ffeb25e38fa57b2a2b003eacd7e8d60334d97
+  sha256: 3836a2bae2c88504889a3226525930dfac8d3621f577cefdfde03db8115e88ac
 
 build:
   noarch: python
