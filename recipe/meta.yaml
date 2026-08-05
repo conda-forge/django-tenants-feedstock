@@ -1,5 +1,5 @@
 {% set name = "django-tenants" %}
-{% set version = "3.12.0" %}
+{% set version = "3.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 4e6dd91f9b3a48cdb4c2fcc400fb1ec8542c2d9d59b65fdeae7e5531ac9cc7bb
+  sha256: c4c0fa6057e832f61eb66256eb7738153a44f9f654d59bec930eacb2b804fee9
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - django <6.1,>=2.1
+    - django >=2.1,<6.1
     # - psycopg <3.3,>=3.2.1
     # - gunicorn ==23
     # - coverage 
@@ -30,6 +30,10 @@ requirements:
     # - coverage 
     # - psycopg <3.3,>=3.2.1
     # - gunicorn ==25.1.0
+    # - coverage 
+    # - psycopg <3.3,>=3.2.1
+    # - mypy 
+    # - gunicorn ==26.0.0
     # - coverage 
     # - psycopg <3.3,>=3.2.1
     # - mypy 
